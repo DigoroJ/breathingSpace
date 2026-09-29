@@ -151,7 +151,7 @@ p {
       rgba(20, 55, 43, 0.92),
       rgba(20, 55, 43, 0.38)
     ),
-    url("https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=2000&q=85")
+    url("images/file_000000006b00820882abaee1b331eb3f.png")
       center / cover no-repeat;
 }
 
@@ -1025,10 +1025,10 @@ p {
 }
 
 /* =========================================
-   FLOATING INQUIRY BUTTON
+   FLOATING WHATSAPP BUTTON
 ========================================= */
 
-.floating-inquiry {
+.floating-whatsapp {
   position: fixed;
 
   right: 20px;
@@ -1036,28 +1036,45 @@ p {
 
   z-index: 900;
 
-  padding: 13px 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 13px 21px;
 
   border-radius: 50px;
 
-  background: var(--gold);
+  background: #25d366;
 
   color: #ffffff;
 
   font-weight: 700;
 
   box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.2);
+    0 8px 25px rgba(0, 0, 0, 0.22);
 
   transition:
     transform 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.floating-inquiry:hover {
+.floating-whatsapp:hover {
+  background: #1ebe5d;
+
   transform: translateY(-3px);
 
-  background: #b48d48;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.whatsapp-icon {
+  font-size: 1.35rem;
+
+  line-height: 1;
 }
 
 /* =========================================
